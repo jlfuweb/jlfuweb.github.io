@@ -22,6 +22,42 @@
         Please contact Gabi Cohen at 224-456-5731, gscohen6@gmail.com, or @gabicohenn on Instagram with any and all questions and comments!</h4>
     </div>
     <br><br>
+    <div class = "bandana">
+        <h2>Tie-Up-Bandana $6 </h2>
+        <img src = "pictures/tie-up-bandana-2.jpg">
+        <img src = "pictures/tie-up-bandana.jpg">
+        <br>
+        <form id = "bandana">
+            <label for="bandana-color">Bandana Color: </label>
+            <input type="text" id="bandana-color" name="bandana-color"><br><br>
+            <input type="button" onclick = "addToCart()" value ="Submit">
+        </form>
+        <script>
+            function addToCart(){
+                alert("bandana")
+                document.getElementById("bandana").submit();
+            }
+        </script>
+    </div>
+    <br><br>
+    <div class = "shoulder-bag">
+        <h2>Shoulder bag $15 </h2>
+        <img src = "pictures/shoulder-bag-2.JPG">
+        <img src = "pictures/shoulder-bag.jpg">
+        <br>
+        <form id = "sholder-bag">
+            <label for="shoulder-bag-colors">Shoulder-Bag Color: </label>
+            <input type="text" id="shoulder-bag-color" name="shoulder-bag-color"><br><br>
+            <input type="button" onclick = "addToCart()" value ="Submit">
+        </form>
+        <script>
+            function addToCart(){
+                console.log("shoulder bag")
+                document.getElementById("shoulder-bag").submit();
+            }
+        </script>
+    </div>
+    <br><br>
     <div class = "cardigan">
         <h2>Front-Tie-Cardigan $32 </h2>
         <img src = "pictures/front-tie-cardigan.jpg">
@@ -42,6 +78,7 @@
         </form>
         <script>
             function addToCart(){
+                console.log("cardigan")
                 document.getElementById("cardigan").submit();
             }
         </script>

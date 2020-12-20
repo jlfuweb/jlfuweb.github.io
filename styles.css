@@ -17,6 +17,26 @@ body {
     text-align: left;
     position: absolute; top: 0; right:5; width: 100px; text-align:left;
 }
+.bandana{
+    text-align: center;
+    width: 80%;
+    max-width: 950px;
+    border: 1px gray solid; 
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.shoulder-bag{
+    text-align: center;
+    width: 80%;
+    max-width: 950px;
+    border: 1px gray solid; 
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
 .cardigan{
     text-align: center;
     width: 80%;
