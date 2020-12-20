@@ -3,6 +3,7 @@
     <title>Gabi's Crochet!</title>
     <link rel="stylesheet" href="styles.css">
     <link rel = "icon" href = "pictures/crochet.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div id="b"><a href="cart.html"><img src="pictures/cart.svg" alt="cart"width="100" height="70", style="float:right;"></a></div>
@@ -20,5 +21,30 @@
         
         Please contact Gabi Cohen at 224-456-5731, gscohen6@gmail.com, or @gabicohenn on Instagram with any and all questions and comments!</h4>
     </div>
-
+    <br><br>
+    <div class = "cardigan">
+        <h2>Front-Tie-Cardigan $32 </h2>
+        <img src = "pictures/front-tie-cardigan.jpg">
+        <img src = "pictures/front-tie-cardigan-2.jpg">
+        <br>
+        <form id = "cardigan">
+            <label for = "cardigan-size">choose a size: </label>
+            <select id = "cardigan-size" name = "cardigan-size">
+                <option value = "choose">choose a size</option>
+                <option value = "small">small</option>
+                <option value = "medium">medium</option>
+                <option value = "large">large</option>
+            </select>
+            <br><br>
+            <label for="cardigan-colors">2 Cardigan Colors: </label>
+            <input type="text" id="cardigan-colors" name="cardigan-colors"><br><br>
+            <input type="button" onclick = "addToCart()" value ="Submit">
+        </form>
+        <script>
+            function addToCart(){
+                document.getElementById("cardigan").submit();
+            }
+        </script>
+    </div>
+    <br><br><br><br>
 </body>
