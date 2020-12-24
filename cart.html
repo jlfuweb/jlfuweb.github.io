@@ -1,11 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <head>
     <title>My Cart - Gabi's Crochet!</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel = "icon" href = "pictures/crochet.jpg">
+    <script type="text/javascript" src='main.js'> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <h1>your cart</h1>
-    <h2>you ordered:</h2>
-
-    <h4>1,000,000,000 watermelon sweaters</h4>
+    <div id="c"><a href="index.html"><img src="pictures/shop.png" alt="shop"width="100" height="85", style="float:right;"></a></div>
+    <div class = main>
+        <h1>Your Cart:</h1>
+        <script>
+            var items = JSON.parse(localStorage.getItem("array"))
+            printItems(items)
+        </script>
+    </div>
 </body>

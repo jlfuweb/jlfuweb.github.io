@@ -3,10 +3,11 @@
     <title>Gabi's Crochet!</title>
     <link rel="stylesheet" href="styles.css">
     <link rel = "icon" href = "pictures/crochet.jpg">
+    <script type="text/javascript" src='main.js'> </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div id="b"><a href="cart.html"><img src="pictures/cart.svg" alt="cart"width="100" height="70", style="float:right;"></a></div>
+    <div id="b"><a href="cart.html?action=getAll&element=product&id=1"><img src="pictures/cart.svg" alt="cart"width="100" height="70", style="float:right;"></a></div>
     <div class = "main">
     <h1>Gabi Cohen's Crochet<h1>
         <h6>All Proceeds Go To the Equal Justice Initiative!</h6>
@@ -27,61 +28,54 @@
         <img src = "pictures/tie-up-bandana-2.jpg">
         <img src = "pictures/tie-up-bandana.jpg">
         <br>
-        <form id = "bandana">
+        <form method = "GET">       
             <label for="bandana-color">Bandana Color: </label>
-            <input type="text" id="bandana-color" name="bandana-color"><br><br>
-            <input type="button" onclick = "addToCart()" value ="Submit">
+            <input type="text" id="bandana-color" name="bandana-color" required><br><br>
+            <input type = "button" value = "submit" onclick = "checkForItems()">
         </form>
-        <script>
-            function addToCart(){
-                alert("bandana")
-                document.getElementById("bandana").submit();
-            }
-        </script>
     </div>
+    <script>
+    </script>
     <br><br>
     <div class = "shoulder-bag">
         <h2>Shoulder bag $15 </h2>
         <img src = "pictures/shoulder-bag-2.JPG">
         <img src = "pictures/shoulder-bag.jpg">
         <br>
-        <form id = "sholder-bag">
-            <label for="shoulder-bag-colors">Shoulder-Bag Color: </label>
-            <input type="text" id="shoulder-bag-color" name="shoulder-bag-color"><br><br>
-            <input type="button" onclick = "addToCart()" value ="Submit">
+        <form method = "GET">
+                <label for="shoulder-bag-strapcoolor">Shoulder Bag Strap Color: </label>
+                <input type="text" id="shoulder-bag-strapcoolor" name="shoulder-bag-strapcoolor" required><br><br>
+                <label for="shoulder-bag-bodycolor">Shoulder Bag Body Color: </label>
+                <input type="text" id="shoulder-bag-bodycolor" name="shoulder-bag-bodycolor" required><br><br>
+                <input type = "button" value = "submit" onclick = "checkForItems()">
         </form>
-        <script>
-            function addToCart(){
-                console.log("shoulder bag")
-                document.getElementById("shoulder-bag").submit();
-            }
-        </script>
     </div>
     <br><br>
+
     <div class = "cardigan">
         <h2>Front-Tie-Cardigan $32 </h2>
         <img src = "pictures/front-tie-cardigan.jpg">
         <img src = "pictures/front-tie-cardigan-2.jpg">
         <br>
-        <form id = "cardigan">
-            <label for = "cardigan-size">choose a size: </label>
-            <select id = "cardigan-size" name = "cardigan-size">
-                <option value = "choose">choose a size</option>
-                <option value = "small">small</option>
-                <option value = "medium">medium</option>
-                <option value = "large">large</option>
-            </select>
-            <br><br>
-            <label for="cardigan-colors">2 Cardigan Colors: </label>
-            <input type="text" id="cardigan-colors" name="cardigan-colors"><br><br>
-            <input type="button" onclick = "addToCart()" value ="Submit">
-        </form>
-        <script>
-            function addToCart(){
-                console.log("cardigan")
-                document.getElementById("cardigan").submit();
-            }
-        </script>
+        <div>
+            <form method = "GET">
+                <label for = "cardigan-size">choose a size: </label>
+                <select id = "cardigan-size" name = "cardigan-size" required>
+                    <option value = "choose">choose a size</option>
+                    <option value = "small">small</option>
+                    <option value = "medium">medium</option>
+                    <option value = "large">large</option>
+                </select>
+                <br><br>
+                <label for="cardigan-maincolor">Cardigan Main Color: </label>
+                <input type="text" id="cardigan-maincolor" name="cardigan-maincolor" required><br><br>
+                <label for="cardigan-edgecolor">Cardigan Edge Color: </label>
+                <input type="text" id="cardigan-edgecolor" name="cardigan-edgecolor" required> <br><br>
+            </form>
+        </div>
+        <div>
+            <input type = "button" value = "submit" onclick = "checkForItems()">
+        </div>
     </div>
     <br><br><br><br>
 </body>
