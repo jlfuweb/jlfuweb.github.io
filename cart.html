@@ -11,6 +11,7 @@
     <div class = main>
         <h1>Your Cart:</h1>
         <script>
+            console.log(window.localStorage.getItem("test"))
             var items = JSON.parse(localStorage.getItem("array"))
             printItems(items)
         </script>
